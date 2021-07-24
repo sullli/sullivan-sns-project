@@ -1,8 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { firestore } from "../firestores/firebase";
 
 export default function Home() {
+  console.log(firestore);
   return (
     <div className={styles.container}>
       <Head>
